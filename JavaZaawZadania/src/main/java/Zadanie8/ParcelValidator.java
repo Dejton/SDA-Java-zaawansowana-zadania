@@ -23,7 +23,7 @@ public class ParcelValidator implements Validator{
     }
 
     private static boolean isCorrectWeight(Parcel input) {
-        return (input.getWeight() > SINGLE_WEIGHT_FOR_NONE_EXPERT && input.isExpress())
+        return (input.getWeight() > SINGLE_WEIGHT_FOR_NONE_EXPERT && !input.isExpress())
                 || (input.getWeight() > SINGLE_WEIGHT_FOR_EXPERT && input.isExpress());
     }
 
