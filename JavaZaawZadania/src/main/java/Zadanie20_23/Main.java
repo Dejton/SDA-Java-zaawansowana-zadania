@@ -1,4 +1,4 @@
-package Zadanie20_21;
+package Zadanie20_23;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,5 +21,9 @@ public class Main {
         Shape3D cube = new Cube(7);
         double cubeVolume = cube.calculateVolume();
         System.out.println("cube Volume: " + cubeVolume);
+
+        cube.fill(345);
+        System.out.println(cube.fill2(342));
+
     }
 }

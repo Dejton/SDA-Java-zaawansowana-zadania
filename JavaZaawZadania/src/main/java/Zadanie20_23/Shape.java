@@ -1,4 +1,4 @@
-package Zadanie20_21;
+package Zadanie20_23;
 
 public abstract class Shape {
      abstract double calculatePerimeter();

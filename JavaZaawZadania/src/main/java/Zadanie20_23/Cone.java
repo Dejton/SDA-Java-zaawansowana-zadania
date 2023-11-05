@@ -1,4 +1,4 @@
-package Zadanie20_21;
+package Zadanie20_23;
 
 public class Cone extends Shape3D{
     double h, a, b, c;
@@ -18,5 +18,15 @@ public class Cone extends Shape3D{
     @Override
     double calculateVolume() {
     return  (h * Math.PI * Math.pow(calculatePerimeter(), 2)) / 3;
+    }
+
+    @Override
+    public void fill(double x) {
+
+    }
+
+    @Override
+    public int fill2(double volume) {
+        return 0;
     }
 }

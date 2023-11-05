@@ -1,4 +1,4 @@
-package Zadanie20_21;
+package Zadanie20_23;
 
 public class Rectangle extends Shape{
     private final double a, b;
