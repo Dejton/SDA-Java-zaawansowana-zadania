@@ -10,5 +10,7 @@ public class Main {
         System.out.println(converter1.convert(35, ConversionType.YARDS_TO_METERS));
         System.out.println(converter1.convert(30, ConversionType.KILOMETERS_TO_MILES));
         System.out.println(converter1.convert(25, ConversionType.MILES_TO_KILOMETERS));
+
+        System.out.println(MeasurementConverter.convert(5,ConversionTypeWithFunction.CENTIMETERS_TO_INCHES));
     }
 }
