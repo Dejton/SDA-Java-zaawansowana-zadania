@@ -1,4 +1,4 @@
-package Zadanie20_23;
+package Zadanie20_21;
 
 public class Main {
     public static void main(String[] args) {

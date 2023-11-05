@@ -1,4 +1,4 @@
-package Zadanie20_23;
+package Zadanie20_21;
 
 public class Hexagon extends Shape{
     private final double a;

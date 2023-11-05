@@ -1,4 +1,4 @@
-package Zadanie20_23;
+package Zadanie20_21;
 
 public class Cone extends Shape3D{
     double h, a, b, c;

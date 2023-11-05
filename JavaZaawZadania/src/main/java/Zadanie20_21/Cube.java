@@ -1,4 +1,4 @@
-package Zadanie20_23;
+package Zadanie20_21;
 
 public class Cube extends Shape3D{
     private final double a;
