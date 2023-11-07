@@ -1,6 +1,5 @@
 package Zadanie12_13;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -44,8 +43,8 @@ public class Main {
 //        Car mostCheapCar = carService.getMostCheapCar();
 //        System.out.println("Cheappest car: " + mostCheapCar);
 
-        List<Car> carsProducedBy = carService.getCarsProducedBy(benz);
-        System.out.println("Cars produced by Benz: " + carsProducedBy.size());
+//        List<Car> carsProducedBy = carService.getCarsProducedBy(benz);
+//        System.out.println("Cars produced by Benz: " + carsProducedBy.size());
 
 
     }
