@@ -1,6 +1,6 @@
 package Zadanie9_10_11;
 
-public class Circle {
+public class Circle implements MoveAble, ResizeAble{
     private final Point2D center, point;
 
     public Circle(Point2D center, Point2D point) {
@@ -19,5 +19,17 @@ public class Circle {
 
     public double getArea() {
         return Math.PI * Math.pow(getRadius(), 2);
+    }
+
+    @Override
+    public void move(MoveDirection moveDirection) {
+        center.move(moveDirection);
+        point.move(moveDirection);
+    }
+
+    @Override
+    public void resize(double resizeFactor) {
+        point.setX(point.getX() + resizeFactor);
+        point.setY(point.getY() + resizeFactor);
     }
 }

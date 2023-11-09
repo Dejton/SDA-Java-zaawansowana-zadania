@@ -10,5 +10,19 @@ public class Main {
         System.out.println(circle.getPerimeter());
         System.out.println(circle.getArea());
 
+//        circle.move(new MoveDirection(3,-3));
+//
+//        System.out.println(center.getX() + " " + center.getY());
+//        System.out.println(point.getX() + " " + point.getY());
+
+        circle.resize(2.5);
+
+        System.out.println(center.getX() + " " + center.getY());
+        System.out.println(point.getX() + " " + point.getY());
+
+        System.out.println(circle.getRadius());
+        System.out.println(circle.getPerimeter());
+        System.out.println(circle.getArea());
+
     }
 }
