@@ -46,6 +46,18 @@ public class Main {
 //        List<Car> carsProducedBy = carService.getCarsProducedBy(benz);
 //        System.out.println("Cars produced by Benz: " + carsProducedBy.size());
 
+//        System.out.println(carService.getMostExpensiveCar());
+
+//        System.out.println(carService.getCarsWithMin2Producers().size());
+
+//        System.out.println(carService.sortCars("rosnąCo"));
+//        System.out.println(carService.sortCars("malejąco"));
+//        System.out.println(carService.sortCars("maleaco"));
+
+        System.out.println(carService.isTheCarOnTheList("xc90"));
+        System.out.println(carService.isTheCarOnTheList("xc9dsa"));
+        System.out.println(carService.isTheCarOnTheList("multipla"));
+
 
     }
 }
