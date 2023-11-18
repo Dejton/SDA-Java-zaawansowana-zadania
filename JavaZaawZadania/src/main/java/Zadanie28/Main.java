@@ -14,7 +14,7 @@ public class Main {
 //        list.add(7);
 //        list.add(8);
 
-        list.addAll(List.of("a", "b", "c", "d","e", "f", "g","h", "i", "j", "k","l", "m", "n"));
+        list.addAll(List.of("a", "b", "c", "d","e", "f", "g","h", "i", "j", "k","l", "m", "n", "o"));
 
         System.out.println(list.getEveryNthElement(2,3));
     }
