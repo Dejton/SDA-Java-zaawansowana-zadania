@@ -21,4 +21,13 @@ class MainTest {
         assertThat(result).isEqualTo(expected);
     }
 
+    void shouldReturnErrorWhenThereIsNull() {
+//        given
+        List<String> listOfStrings = List.of("Kamila", null, "Patryk", "Agnieszka", "Zbyszek");
+//        when
+
+//        then
+
+    }
+
 }

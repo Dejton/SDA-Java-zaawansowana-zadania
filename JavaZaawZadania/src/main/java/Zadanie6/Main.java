@@ -11,6 +11,6 @@ public class Main {
         person.put("Jan", "Kowalski");
         person.put("Adam", "Nowak");
         person.put("Zbigniew", "Skoczek");
-Print.printFirstAndLastEntrySet(person);
+//       Print.printFirstAndLastEntrySet(person);
     }
 }

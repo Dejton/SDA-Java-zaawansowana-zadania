@@ -7,8 +7,12 @@ import java.util.stream.Collectors;
 
 public class SortClass {
     public static List<String> sort(List<String> input) {
-        return input.stream()
-                .sorted((o1, o2) -> o2.compareToIgnoreCase(o1))
-                .toList();
+        if (input.isEmpty() || (input.contains(null) || input.contains("") || input.contains(" "))) {
+            throw new IllegalArgumentException("Wprowadzono błędną wartość!");
+        } else {
+            return input.stream()
+                    .sorted((o1, o2) -> o2.compareToIgnoreCase(o1))
+                    .toList();
+        }
     }
 }

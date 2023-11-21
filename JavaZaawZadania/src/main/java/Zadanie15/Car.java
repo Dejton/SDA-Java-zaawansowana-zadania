@@ -22,14 +22,6 @@ public enum Car {
         this.speed = speed;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public int getPower() {
-        return power;
-    }
-
     public int getSpeed() {
         return speed;
     }
@@ -38,11 +30,14 @@ public enum Car {
         if (isRegular) return false;
         return true;
     }
+
     public boolean isRegular() {
         return isRegular;
     }
+
     public boolean isFasterThan(Car car) {
-        if (Integer.compare(this.getSpeed(), car.getSpeed()) == - 1 || Integer.compare(this.getSpeed(), car.getSpeed()) == 0) return false;
+        if (Integer.compare(this.getSpeed(), car.getSpeed()) == -1
+                || this.getSpeed() == car.getSpeed()) return false;
         return true;
     }
 }

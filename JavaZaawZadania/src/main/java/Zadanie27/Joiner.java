@@ -12,6 +12,7 @@ public class Joiner<T> {
     }
 
     public String join(T... elements) {
+        if (this.delimiter.matches(".{2,}")) throw new IllegalArgumentException("Błędna wartość");
         return Arrays.stream(elements)
                 .map(Objects::toString)
                 .collect(Collectors.joining(delimiter));

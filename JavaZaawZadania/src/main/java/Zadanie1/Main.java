@@ -1,5 +1,6 @@
 package Zadanie1;
 
+import java.sql.SQLOutput;
 import java.util.*;
 import java.util.stream.LongStream;
 
@@ -40,6 +41,9 @@ public class Main {
 
     public static List<String> sortUsingOwnComparator(List<String> unsorted) {
         List<String> sorted = new ArrayList<>(unsorted);
+        if (unsorted.contains(null) || unsorted.contains("") || unsorted.contains(" ") || unsorted.isEmpty()) {
+            throw new IllegalArgumentException("Wprowadzono nie prawidłową wartość!");
+        }
         Collections.sort(sorted, new OwnSortComparator());
         return sorted;
     }

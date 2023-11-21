@@ -12,7 +12,7 @@ public class ParcelValidator implements Validator{
         if (isXYZLessThan300(input)) {
             System.out.println("Paczka za duża!");
             return  false;
-        } else if (isAllDimensionsAreMoreThan30(input)) {
+        } else if (isAllDimensionsAreMoreThan30AndLessThan300(input)) {
             System.out.println("Nie prawidłowe wymiary!");
             return  false;
         } else if (isCorrectWeight(input)) {
@@ -24,16 +24,17 @@ public class ParcelValidator implements Validator{
 
     private static boolean isCorrectWeight(Parcel input) {
         return (input.getWeight() > SINGLE_WEIGHT_FOR_NONE_EXPERT && !input.isExpress())
-                || (input.getWeight() > SINGLE_WEIGHT_FOR_EXPERT && input.isExpress());
+                || (input.getWeight() > SINGLE_WEIGHT_FOR_EXPERT && input.isExpress())
+                || input.getWeight() == 0;
     }
 
     private static boolean isXYZLessThan300(Parcel input) {
-        return input.getxLength() + input.getyLength() + input.getzLength() >= SINGLE_MAX_LENGTH;
+        return input.getxLength() + input.getyLength() + input.getzLength() > 300;
     }
 
-    private static boolean isAllDimensionsAreMoreThan30(Parcel input) {
-        return input.getxLength() <= SINGLE_MIN_LENGTH
-                || input.getyLength() <= SINGLE_MIN_LENGTH
-                || input.getzLength() <= SINGLE_MIN_LENGTH;
+    private static boolean isAllDimensionsAreMoreThan30AndLessThan300(Parcel input) {
+        return (input.getxLength() < SINGLE_MIN_LENGTH || input.getxLength() > SINGLE_MAX_LENGTH)
+                || (input.getyLength() < SINGLE_MIN_LENGTH || input.getyLength() > SINGLE_MAX_LENGTH)
+                || (input.getzLength() < SINGLE_MIN_LENGTH || input.getzLength() > SINGLE_MAX_LENGTH);
     }
 }
